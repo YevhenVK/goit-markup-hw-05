@@ -1,0 +1,599 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --primary--button-color: #188ce8;
+  --background-button-color: #f5f4fa;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --accent-color: #2196f3;
+  --social-text-color: #afb1b8;
+  --secondary-address-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --background-team-color: #f5f4fa;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+body {
+  margin: 0;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-family: Roboto, sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Color of navigation */
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Header  */
+.container .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-page .container,
+.navigation,
+.site-nav,
+.contact.list {
+  display: flex;
+  align-items: center;
+}
+.contact .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 93px;
+}
+.nav-item .link,
+.contact-item .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact {
+  margin-left: auto;
+}
+.contact-item {
+  padding: 0px;
+  display: flex;
+}
+/* Значки слева от телефона и почты 2 вариант */
+.bond {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+  color: var(--accent-color);
+}
+
+.container .contact-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Нижняя граница хедера в сером цвете */
+.header-page {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+/* Main */
+.section.post {
+  display: flex;
+  min-height: 600px;
+  max-width: 1600px;
+  background-color: var(--secondary-background-color);
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/Header.jpg");
+  width: 100%;
+}
+
+.post-title {
+  margin: 0 auto;
+  color: var(--secondary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+}
+
+.post-button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: inherit;
+  text-align: center;
+  align-items: center;
+  min-width: 200px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+/* Container text */
+.container-list {
+  /* НОВОЕ */
+  display: flex;
+}
+/* Для блочка мейн значки вариант 2 */
+/* Картинки в 1 секции */
+.concern {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--background-button-color);
+}
+.concern-icon {
+  width: 70px;
+  height: 70px;
+}
+.container-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.container-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.container-block {
+  min-width: 270px;
+}
+.container-block:not(:last-child) {
+  margin-right: 30px;
+}
+/* Occupation */
+.occupation {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section-employment {
+  padding-bottom: 94px;
+}
+
+/* Наша команда */
+.container-inner {
+  color: var(--title-text-color);
+  background-color: var(--background-team-color);
+}
+.personal-card {
+  display: block;
+  padding: 30px 32px;
+}
+.container-inner h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.container-inner p {
+  color: var(--primary-text-color);
+}
+.team.list,
+.work.list {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-card h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.personal-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.personal-card {
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+}
+
+.special {
+  display: flex;
+  margin-top: 16px;
+}
+
+.social-page-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--social-text-color);
+  border-radius: 50%;
+}
+.social-page:not(:last-child) {
+  margin-right: 10px;
+}
+.social-page-icon:hover,
+.social-page-icon:focus,
+.icon:focus,
+.icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-background-color);
+}
+/* ---------------------------------------- */
+/* Just focus and hover */
+.address-text:focus,
+.address-text:hover,
+.logo:hover,
+.logo:focus,
+.logo.down:hover,
+.logo.down:focus,
+.footer-contact .link:focus,
+.footer-contact .link:hover,
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+.post-button:focus,
+.post-button:hover {
+  background-color: var(--primary--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.filter-button:focus,
+.filter-button:hover {
+  color: var(--secondary-text-color);
+}
+
+/* Logo */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+/* Made our Web to bluey */
+.logo > span {
+  color: var(--accent-color);
+}
+
+/* Эмблемки для Постоянные клиенты */
+.clients {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.company {
+  display: flex;
+}
+.company-icon {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--social-text-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--social-text-color);
+}
+.company-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-icon:hover,
+.company-icon:focus,
+.emblem:hover,
+.emblem:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* --------- Footer --------*/
+.footer-page {
+  background-color: var(--secondary-background-color);
+  padding: 60px 0 60px 0;
+}
+.footer-page .ground {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contact li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.address-text {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo.down {
+  color: var(--secondary-text-color);
+}
+.address {
+  margin-top: 20px;
+}
+.footer-contact .link {
+  color: var(--secondary-address-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.social-title {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-social > li {
+  display: inline-flex;
+}
+.footer-social-page {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--secondary-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-page:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-page:hover,
+.footer-social-page:focus {
+  background-color: var(--accent-color);
+}
+.ground > div:not(:last-child) {
+  margin-right: 70px;
+}
+
+/* ---------Portfolio------------ */
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+.button-line {
+  background-color: var(--background-button-color);
+  border-radius: 4px;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: none;
+}
+.button-line:not(:first-child) {
+  margin-left: 8px;
+}
+.filter-button.current {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.filter-button:focus,
+.filter-button:hover,
+.filter-button:active {
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+/* Карточки */
+.content-name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Самый правильный для меня отступ между карточками */
+.content.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.content-item:nth-child(3n) {
+  margin-right: 0;
+}
+.content-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.content-item-link {
+  display: block;
+}
+
+/* Тень для карточек в портфолио */
+.content-item a:hover,
+.content-item a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-title {
+  display: block;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+/* Для блочка мейн значки вариант 1 */
+/* .container-block::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.container-block:nth-child(1)::before {
+  background-image: url("../img/antenna.svg");
+}
+.container-block:nth-child(2)::before {
+  background-image: url("../img/clock.svg");
+}
+.container-block:nth-child(3)::before {
+  background-image: url("../img/diagram.svg");
+}
+.container-block:nth-child(4)::before {
+  background-image: url("../img/astronaut.svg");
+} */
+
+/* Значки слева от телефона и почты 1 вариант */
+/* .contact .link::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 10px;
+  background-position: center;
+}
+.mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/envelope.svg);
+}
+.link.tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../img/smartphone.svg);
+} */
