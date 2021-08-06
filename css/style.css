@@ -590,7 +590,8 @@ img {
   transition: transform 250ms linear, opacity 250ms linear;
   opacity: 0;
 }
-.content-item-link:hover .product-text {
+.content-item-link:hover .product-text,
+.content-item-link:focus .product-text {
   transform: translateY(0%);
   opacity: 1;
 }
