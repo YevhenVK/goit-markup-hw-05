@@ -485,6 +485,9 @@ img {
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border: none;
+  /* -----Кнопки в портфолио плавно подсвечиваются------- */
+  transition: background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
 }
 .button-line:not(:first-child) {
   margin-left: 8px;
