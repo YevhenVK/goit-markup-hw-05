@@ -66,6 +66,7 @@ img {
   color: var(--title-text-color);
   text-decoration: none;
   cursor: pointer;
+  transition: color 250ms var(--cubic-bezier);
 }
 
 /* Header  */
@@ -350,6 +351,8 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  transition: color 250ms var(--cubic-bezier);
 }
 /* Made our Web to bluey */
 .logo > span {
@@ -412,6 +415,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition: color 250ms var(--cubic-bezier);
 }
 .logo.down {
   color: var(--secondary-text-color);
@@ -450,6 +454,8 @@ img {
   border-radius: 50%;
   fill: var(--secondary-text-color);
   background: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .footer-social-page:not(:last-child) {
