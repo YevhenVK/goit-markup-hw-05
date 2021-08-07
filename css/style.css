@@ -321,6 +321,9 @@ img {
   height: 44px;
   fill: var(--social-text-color);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
 }
 .social-page:not(:last-child) {
   margin-right: 10px;
@@ -399,6 +402,8 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--social-text-color);
+
+  transition: fill 250ms var(--cubic-bezier);
 }
 .company-list:not(:last-child) {
   margin-right: 30px;
