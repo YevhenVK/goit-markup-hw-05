@@ -117,8 +117,12 @@ img {
   bottom: -1px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  transition: transform 250ms var(--cubic-bezier);
+  /* transition: transform 250ms var(--cubic-bezier);
+  transform: scaleX(0%); */
 }
+/* .link.current:hover::after {
+  transform: scaleX(100%);
+} */
 /* ------------------------------------ */
 .contact {
   margin-left: auto;
