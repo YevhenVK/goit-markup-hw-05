@@ -359,18 +359,19 @@ img {
   border-radius: 50%;
 
   transition: background-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
+    fill 250ms var(--cubic-bezier);
 }
+
 .social-page:not(:last-child) {
   margin-right: 10px;
 }
+
 .social-page-icon:hover,
-.social-page-icon:focus,
-.icon:focus,
-.icon:hover {
+.social-page-icon:focus {
   background-color: var(--accent-color);
   fill: var(--primary-background-color);
 }
+
 /* ---------------------------------------- */
 /* Just focus and hover */
 .address-text:focus,
