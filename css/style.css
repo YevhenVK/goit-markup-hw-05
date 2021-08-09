@@ -186,12 +186,13 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 696px;
+  margin-bottom: 30px;
 }
 
 .post-button {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 0;
   font-family: inherit;
   text-align: center;
