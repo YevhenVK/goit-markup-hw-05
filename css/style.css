@@ -679,7 +679,8 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
   visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--cubic-bezier);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
 }
 
 .modal {
