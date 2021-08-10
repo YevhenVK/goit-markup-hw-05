@@ -155,7 +155,7 @@ img {
 }
 
 /* Main */
-.section.post {
+.post {
   display: flex;
   min-height: 600px;
   max-width: 1600px;
